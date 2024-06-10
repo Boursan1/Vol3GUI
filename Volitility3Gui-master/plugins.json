@@ -1,0 +1,372 @@
+[
+  {
+    "OS": "windows",
+    "Command": "windows.statistics.Statistics",
+    "Name": "Statistics"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.pslist.PsList",
+    "Name": "PsList"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.handles.Handles",
+    "Name": "Handles"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.poolscanner.PoolScanner",
+    "Name": "PoolScanner"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.bigpools.BigPools",
+    "Name": "BigPools"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.registry.hivescan.HiveScan",
+    "Name": "HiveScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.registry.hivelist.HiveList",
+    "Name": "HiveList"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.registry.printkey.PrintKey",
+    "Name": "PrintKey"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.registry.certificates.Certificates",
+    "Name": "Certificates"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.pslist.PsList",
+    "Name": "PsList"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.pstree.PsTree",
+    "Name": "PsTree"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.bash.Bash",
+    "Name": "Bash"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.check_afinfo.Check_afinfo",
+    "Name": "Check_afinfo"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.check_creds.Check_creds",
+    "Name": "Check_creds"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.lsmod.Lsmod",
+    "Name": "Lsmod"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.check_idt.Check_idt",
+    "Name": "Check_idt"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.check_modules.Check_modules",
+    "Name": "Check_modules"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.check_syscall.Check_syscall",
+    "Name": "Check_syscall"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.elfs.Elfs",
+    "Name": "Elfs"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.keyboard_notifiers.Keyboard_notifiers",
+    "Name": "Keyboard_notifiers"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.lsof.Lsof",
+    "Name": "Lsof"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.malfind.Malfind",
+    "Name": "Malfind"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.proc.Maps",
+    "Name": "Maps"
+  },
+  {
+    "OS": "linux",
+    "Command": "linux.tty_check.tty_check",
+    "Name": "tty_check"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.pslist.PsList",
+    "Name": "PsList"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.bash.Bash",
+    "Name": "Bash"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.lsmod.Lsmod",
+    "Name": "Lsmod"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.check_syscall.Check_syscall",
+    "Name": "Check_syscall"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.check_sysctl.Check_sysctl",
+    "Name": "Check_sysctl"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.check_trap_table.Check_trap_table",
+    "Name": "Check_trap_table"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.ifconfig.Ifconfig",
+    "Name": "Ifconfig"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.kauth_scopes.Kauth_scopes",
+    "Name": "Kauth_scopes"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.kauth_listeners.Kauth_listeners",
+    "Name": "Kauth_listeners"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.kevents.Kevents",
+    "Name": "Kevents"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.mount.Mount",
+    "Name": "Mount"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.list_files.List_Files",
+    "Name": "List_Files"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.lsof.Lsof",
+    "Name": "Lsof"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.malfind.Malfind",
+    "Name": "Malfind"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.netstat.Netstat",
+    "Name": "Netstat"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.proc_maps.Maps",
+    "Name": "Maps"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.psaux.Psaux",
+    "Name": "Psaux"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.pstree.PsTree",
+    "Name": "PsTree"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.socket_filters.Socket_filters",
+    "Name": "Socket_filters"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.timers.Timers",
+    "Name": "Timers"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.trustedbsd.Trustedbsd",
+    "Name": "Trustedbsd"
+  },
+  {
+    "OS": "mac",
+    "Command": "mac.vfsevents.VFSevents",
+    "Name": "VFSevents"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.info.Info",
+    "Name": "Info"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.dlllist.DllList",
+    "Name": "DllList"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.modules.Modules",
+    "Name": "Modules"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.ssdt.SSDT",
+    "Name": "SSDT"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.vadyarascan.VadYaraScan",
+    "Name": "VadYaraScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.svcscan.SvcScan",
+    "Name": "SvcScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.callbacks.Callbacks",
+    "Name": "Callbacks"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.cmdline.CmdLine",
+    "Name": "CmdLine"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.driverscan.DriverScan",
+    "Name": "DriverScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.driverirp.DriverIrp",
+    "Name": "DriverIrp"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.envars.Envars",
+    "Name": "Envars"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.filescan.FileScan",
+    "Name": "FileScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.getservicesids.GetServiceSIDs",
+    "Name": "GetServiceSIDs"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.getsids.GetSIDs",
+    "Name": "GetSIDs"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.vadinfo.VadInfo",
+    "Name": "VadInfo"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.malfind.Malfind",
+    "Name": "Malfind"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.memmap.Memmap",
+    "Name": "Memmap"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.modscan.ModScan",
+    "Name": "ModScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.mutantscan.MutantScan",
+    "Name": "MutantScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.netscan.NetScan",
+    "Name": "NetScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.privileges.Privs",
+    "Name": "Privs"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.psscan.PsScan",
+    "Name": "PsScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.pstree.PsTree",
+    "Name": "PsTree"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.strings.Strings",
+    "Name": "Strings"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.symlinkscan.SymlinkScan",
+    "Name": "SymlinkScan"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.verinfo.VerInfo",
+    "Name": "VerInfo"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.virtmap.VirtMap",
+    "Name": "VirtMap"
+  },
+  {
+    "OS": "windows",
+    "Command": "windows.registry.userassist.UserAssist",
+    "Name": "UserAssist"
+  }
+]

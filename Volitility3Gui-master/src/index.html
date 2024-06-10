@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>::-webkit-scrollbar {display: none;}</style>
+
+    <!-- Christopher Place CS498 Capstone -->
+
+    <!-- Dependencies Start -->
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css" />
+    <link rel="stylesheet" href="..\node_modules\datatables.net-dt\css\jquery.dataTables.css" />
+    <script>
+      window.jQuery = window.$ = require("jquery");
+      require('bootstrap');
+      require('popper.js');
+    </script>  
+    <!-- Dependencies End -->
+
+  <title>Volatility 3 Capstone</title>
+  </head>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"style="-webkit-app-region:drag">
+  <div>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="-webkit-app-region:no-drag">
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Settings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#" onclick="volatilityUpdate()">Update Volatility</a>
+            <a class="dropdown-item" href="#" onclick="pluginUpdate(false)">Update Plugins </a>
+            <a class="dropdown-item" href="#" onclick="pythonDepend()">Install Python Dependencies</a>
+        </li>
+      </ul>
+    </div>
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="./icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <strong> Volatility 3 GUI Capstone</strong>
+      </a>
+        <div class="d-flex flex-row-reverse " >
+          <button type="button" class="btn btn-outline-danger btn-lg" style="float:right; -webkit-app-region:no-drag" onclick="window.close()">Exit</button>
+        </div>
+
+  </nav>
+  <body style= "padding-top: 70px;">
+    <div class="mx-auto w-75 input-group pt-5 pb-2">
+      <div class="custom-file" ; text-align: center>
+        <input
+          type="file"
+          accept=".dmp,.raw,.sys,.img,.bin"
+          class="custom-file-input"
+          id="input"
+          aria-describedby="inputGroupFile"
+        />
+        <label class="custom-file-label" for="input">Select File</label>
+      </div>
+    </div>
+
+    <div
+      class="row justify-content-center top-buffer pb-2"
+      role="group"
+      aria-label="Button group with nested dropdown"
+    >
+    <div class="col-xs-3">
+      <select class="form-control" id="platform">
+        <option selected disabled>Operating System</option>
+        <option value="windows" id="windows">Windows</option>
+        <option value="linux" id="linux">Linux</option>
+        <option value="mac" id="mac">Mac</option>
+      </select>
+    </div>
+    <div class="col-xs-3">
+      <select class="form-control" name="Command" id="command" disabled>
+        <option value="default" selected disabled>Choose Command</option>
+      </select>
+    </div>
+    
+      <div class="btn-group col-xs-6" role="group">
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          id="inputGroupFileAddon"
+          onclick="getData();"
+        >
+          Run Command
+        </button>
+      </div>
+    </div>
+
+    <div class="mx-auto w-75 text-center p-2">
+    <div
+      class="alert alert-warning alert-dismissible p-2"
+      role="alert"
+      id="alertError"
+      style="display: none; text-align: center"
+    >
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div
+    class="alert alert-success alert-dismissible p-2"
+    role="alert"
+    id="alertSuccess"
+    style="display: none; text-align: center"
+    >
+      <button type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+      <div id="loadingStatus" class="spinner-grow text-danger slow" role="status" style="display: none;">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  
+    <!-- Output -->
+    <div class="mx-auto w-75 row justify-content-center top-buffer"> 
+      <table
+        id="output"
+        class="display table-center table-striped table-bordered table-responsive table-hover" style="width:100%"
+        cellspacing="0"
+      ></table>
+    </div>
+
+    <div   style="width: 100%; text-align: center; padding:10;" >
+      <p class="font-weight-light user-select-none">
+        <a href="https://github.com/whatplace/Volitility3Gui">Volatility 3 GUI Capstone</a> is an implementation of the <a href="https://github.com/volatilityfoundation/volatility3">Volatility 3 Open Source Framework</a>
+         adapted by Christopher Place.
+      </p>
+    </div>
+
+    <script src="interpreter.js"></script>
+    <script src="updates.js"></script>
+  
+  </body>
+</html>
